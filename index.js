@@ -1,7 +1,8 @@
+require("dotenv").config();
 const express = require('express');
-
+const port = process.env.PORT || 3000;
 const app = express();
-const PORT = 3000;
+const PORT = port;
 
 // Para parsear x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
